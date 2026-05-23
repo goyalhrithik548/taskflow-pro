@@ -12,6 +12,7 @@ The application supports secure authentication, role-based access control, task 
 
 ```text
 https://taskflow-e55moje28-hrithik-kumar-s-projects.vercel.app
+```
 ---
 
 # Tech Stack
