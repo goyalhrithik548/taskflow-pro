@@ -12,14 +12,6 @@ The application supports secure authentication, role-based access control, task 
 
 ```text
 https://taskflow-e55moje28-hrithik-kumar-s-projects.vercel.app
-```
-
-## Backend (Railway)
-
-```text
-https://taskflow-pro-production-1a73.up.railway.app
-```
-
 ---
 
 # Tech Stack
