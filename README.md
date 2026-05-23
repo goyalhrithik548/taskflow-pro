@@ -1,8 +1,7 @@
-# Team Task Manager
+# TaskFlow Pro
 
-## Tech Stack
-- Backend: Python, Flask, MongoDB (PyMongo)
-- Frontend: React.js, Tailwind CSS, Vite
+A full-stack task management and admin dashboard application built using React, Flask, MongoDB, JWT Authentication, and Tailwind CSS.
+
 
 ## Project Structure
 ```text
@@ -53,61 +52,185 @@
     └── package.json
 ```
 
-## How to Run
+---
 
-### Backend
+# Features
+
+## Authentication
+- User Registration
+- User Login
+- JWT Authentication
+- Protected Routes
+- Admin Role Support
+
+## User Features
+- Create Tasks
+- View Personal Tasks
+- Task Dashboard
+- Secure Authentication Context
+
+## Admin Features
+- Admin Dashboard
+- User Management
+- Task Monitoring
+- Activity Logs
+
+---
+
+# Tech Stack
+
+## Frontend
+- React
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Axios
+- JWT Decode
+
+## Backend
+- Flask
+- Flask-CORS
+- PyMongo
+- JWT
+- bcrypt
+- MongoDB Atlas
+
+---
+
+# Project Structure
+
+```bash
+backend/
+frontend/
+```
+
+---
+
+# Backend Setup
+
+## Navigate to backend
+
 ```bash
 cd backend
+```
+
+## Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+## Activate virtual environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+## Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+# Environment Variables
+
+Create a `.env` file inside `backend/`
+
+```env
+MONGO_URI=your_mongodb_atlas_url
+JWT_SECRET_KEY=your_secret_key
+```
+
+---
+
+# Run Seed Script
+
+```bash
 python seed.py
+```
+
+This creates demo users and sample data.
+
+---
+
+# Run Backend
+
+```bash
 python main.py
 ```
 
-The backend starts on http://localhost:5000.
+Backend runs on:
 
-### Frontend
+```bash
+http://127.0.0.1:5000
+```
+
+---
+
+# Frontend Setup
+
+## Navigate to frontend
+
 ```bash
 cd frontend
+```
+
+---
+
+## Install dependencies
+
+```bash
 npm install
+```
+
+---
+
+## Run Frontend
+
+```bash
 npm run dev
 ```
 
-The frontend starts on http://localhost:5173.
+Frontend runs on:
 
-## Demo Accounts
+```bash
+http://localhost:5173
+```
+
+---
+
+# Demo Credentials
+
+## Admin
+
+```text
+Email: admin@demo.com
+Password: admin123
+```
+
+## User
+```
 | Role  | Email          | Password |
 |-------|----------------|----------|
 | Admin | admin@demo.com | admin123 |
 | User  | alice@demo.com | user123  |
 | User  | bob@demo.com   | user123  |
+---
 
-## API Endpoints
+# Important Notes
 
-### Auth
-```text
-POST   /api/auth/register
-POST   /api/auth/login
-GET    /api/auth/me
-```
+- `.env` file is intentionally excluded from GitHub.
+- MongoDB Atlas IP access must allow external connections.
+- Update frontend API URL before production deployment.
 
-### Tasks
-```text
-POST   /api/tasks
-GET    /api/tasks
-PUT    /api/tasks/<task_id>
-DELETE /api/tasks/<task_id>
-```
+---
 
-### Admin
-```text
-GET    /api/admin/users
-PATCH  /api/admin/users/<user_id>/status
-DELETE /api/admin/users/<user_id>
-GET    /api/admin/tasks
-GET    /api/admin/stats
-```
+# Author
 
-### Logs
-```text
-GET    /api/logs
-```
+Hrithik Kumar
