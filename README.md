@@ -215,7 +215,6 @@ Password: admin123
 ```
 
 ## User
-```
 | Role  | Email          | Password |
 |-------|----------------|----------|
 | Admin | admin@demo.com | admin123 |
